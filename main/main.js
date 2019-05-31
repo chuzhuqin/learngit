@@ -1,7 +1,7 @@
 // Write your cade below:
-module.exports = function main(num1, num2) {
-  if (num2 == 0) {
+module.exports = function main(a1, a2) {
+  if (a2 == 0) {
   	return 0;
   }
-  return num1%num2;
+  return a1%a2;
 };
