@@ -1,26 +1,26 @@
 module.exports = function main(num) {
-	str1 = '._....._.._....._.._.._.._.._.';
-	str2 = '|.|..|._|._||_||_.|_...||_||_|';
-	str3 = '|_|..||_.._|..|._||_|..||_|..|';
-	var strarr1 = new Array();
-	var strarr2 = new Array();
-	var strarr3 = new Array();
+	string1 = '._....._.._....._.._.._.._.._.';
+	string2 = '|.|..|._|._||_||_.|_...||_||_|';
+	string3 = '|_|..||_.._|..|._||_|..||_|..|';
+	var stringarr1 = new Array();
+	var stringarr2 = new Array();
+	var stringarr3 = new Array();
 	//console.log(num.length);
 	
 	for (var i=0;  i<num.length; ++i) {
-		strarr1.push(str1.substr(eval(num[i])*3, 3));
-		strarr2.push(str2.substr(eval(num[i])*3, 3));
-		strarr3.push(str3.substr(eval(num[i])*3, 3));
+		stringarr1.push(string1.substr(eval(num[i])*3, 3));
+		stringarr2.push(string2.substr(eval(num[i])*3, 3));
+		stringarr3.push(string3.substr(eval(num[i])*3, 3));
 	}
 
-	var s1 = strarr1.join(" ");
-	var s2 = strarr2.join(" ");
-	var s3 = strarr3.join(" ");
-	var strarr = new Array();
-	strarr.push(s1);
-	strarr.push(s2);
-	strarr.push(s3);
-	var res = strarr.join("\n");
-	res = res + '\n';
-    return res;
+	var s1 = stringarr1.join(" ");
+	var s2 = stringarr2.join(" ");
+	var s3 = stringarr3.join(" ");
+	var stringarr = new Array();
+	stringarr.push(s1);
+	stringarr.push(s2);
+	stringarr.push(s3);
+	var temp = stringarr.join("\n");
+	temp = temp + '\n';
+    return temp;
 };
